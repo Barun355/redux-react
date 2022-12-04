@@ -1,9 +1,6 @@
-import React, { useContext } from 'react'
-import balanceContext from '../context/balanceContext'
+import React  from 'react'
 
 const Navbar = () => {
-
-    const { balance } = useContext(balanceContext);
 
     return (
         <nav class="navbar navbar-expand-sm navbar-light bg-light px-2">
@@ -20,7 +17,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <button className="btn btn-primary">
-                    Balance : {balance}
+                    Balance : 10000
                 </button>
             </div>
         </nav>
