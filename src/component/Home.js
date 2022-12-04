@@ -1,5 +1,6 @@
 import React from 'react'
 import Count from 'react-countup'
+// import buyCake from '../Redux/index'
 
 const Home = () => {
 
@@ -19,5 +20,6 @@ const Home = () => {
     </>
   )
 }
+
 
 export default Home
