@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './component/Navbar';
+import Home from './component/Home';
+import BalanceState from './context/BalanceState';
+import AccountBalanceState from './context/AccountBalance/AccountBalanceState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BalanceState>
+      <AccountBalanceState>
+        <div className="App">
+          <Navbar />
+          <Home />
+        </div>
+      </AccountBalanceState>
+    </BalanceState>
   );
 }
 
