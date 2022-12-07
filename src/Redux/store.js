@@ -1,7 +1,7 @@
-import { createStoreHook } from "react-redux";
+import { createStore } from "redux";
 import cakeReducer from './Cakes/cakeReducer'
 
-const store = createStoreHook(cakeReducer)
+const store = createStore(cakeReducer)
 
 
 export default store;
